@@ -21,6 +21,7 @@ $(document).on("ready", function() {
 
     function renderQuakeData(quakeResults) {
       console.log("received results:", quakeResults);
+      console.log(quakeResults.features[0].properties.title)
     }
 
     function onError(xhr, status, errorThrown) {
